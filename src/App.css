@@ -4,7 +4,8 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(79deg, #d52c1d 23%, #aab6bf 33%, #0047AB 33%);
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(#2039ba 48%, #f92015);
   
 }
 
@@ -12,6 +13,25 @@
 .auth-form-container, .login-form, .register-form { /* container for both forms */
   display: flex;
   flex-direction: column;
+  background-color: white;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .auth-form-container {
+    padding: 5rem; /* padding around both forms */
+    border: 1px solid; /* border around both forms */
+    border-radius: 10px; /* rounded corners */
+    margin: .5rem;
+  }
+  
+}
+
+.auth-form-container {
+  padding: 5rem; /* padding around both forms */
+  border: 1px solid white; /* border around both forms */
+  border-radius: 10px; /* rounded corners */
+  margin: .5rem;
 }
 
 label { /* labels */
@@ -22,21 +42,30 @@ label { /* labels */
 input { /* input fields */
   margin: .5rem 0;
   padding: .5rem;
-  border: none;
+  border: 1.5px solid #000000;
   border-radius: 10px;
 }
 
-button {
+.login-title, .register-form, .register-title {
+  color: #000000;
+}
+
+button{
   border: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
+  color: #c66fbc;
+}
+
+button.login-submit, .submit-button {
+  border: 1px solid #000000;
 }
 
 
 .link-btn {
-  background-color: none;
-  color: white;
+  background: none;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
