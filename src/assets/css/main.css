@@ -1,0 +1,42 @@
+.main-header {
+    color: #16417C;
+    font-family: "Abril Fatface";
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.main-button {
+    color:#16417C;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #D03027;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.divider {
+    border: .5px solid #D03027;
+    width: 1200px;
+    margin: auto;
+}
+
+.advice {
+    padding-top: 200px;
+    margin-bottom: 400px;
+    color: #16417C;
+    text-align: center;
+}

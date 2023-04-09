@@ -1,19 +1,24 @@
-import React, { useState } from 'react'; // useState is a hook
-import logo from './logo.svg';
+// import React, { useState } from 'react'; // useState is a hook
+// import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import { Login } from "./Login";
-import { Register } from "./Register";
+import MainPage from './pages/MainPage';
+import LoginRegPage from './pages/LoginRegPage';
+import Navbar from './components/Navbar';
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('login'); // useState hook
-  
   return (
     <div className="App">
-      {
-        /*ternary operator check if login works, if not, then register*/
-        currentForm === 'login' ? <Login/> : <Register/> // 
-      }
-       
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          {/* <Route path="/">
+          </Route> */}
+          <Route index element={<LoginRegPage />} />
+          <Route path="main" element={<MainPage />} />
+          <Route path="loginreg" element={<LoginRegPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

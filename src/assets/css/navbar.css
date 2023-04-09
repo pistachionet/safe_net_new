@@ -1,0 +1,31 @@
+.Navbar {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #16417C;
+    font-family: "Abril Fatface";
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.logo {
+    color: #16417C;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.right-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-navbar-item {
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    color: #D03027;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
